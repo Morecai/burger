@@ -9,7 +9,7 @@ if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "CA-stle2134",
+        password: "",
         database: "burgers_db"
     });
 
@@ -20,5 +20,6 @@ if (process.env.JAWSDB_URL) {
         }
         console.log("connected as id " + connection.threadId);
     });
-    connection.connect();
-    module.exports = connection;
+}
+
+module.exports = connection;
